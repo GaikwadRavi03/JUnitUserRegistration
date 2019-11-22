@@ -3,7 +3,7 @@ package com.userregistration;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class UserRegisrationTest {
+public class UserRegistrationTest {
 
         @Test
         public void givenMessageShowTrueWhenFirstNameWithCapitalLetter() {
@@ -12,5 +12,9 @@ public class UserRegisrationTest {
         @Test
         public void givenMessageShowFalseWhenFirstNameWithoutCapitalLetterAndWithSymbols() {
             Assert.assertTrue(UserRegistration.userFirstName("ravi@"));
-    }
+        }
+        @Test
+        public void givenMessageShowTrueWhenLastNameWithCapitalLetter() {
+            Assert.assertTrue(UserRegistration.userLastName("Gaikwad"));
+        }
 }

@@ -14,4 +14,12 @@ public class UserRegistration {
             return false;
     }
 
+    public static boolean userLastName(String lastName) {
+        Pattern lastNamePattern= Pattern.compile("^[A-Z]{1}[a-z]{3,}$");
+        Matcher match=lastNamePattern.matcher(lastName);
+        if (match.matches())
+            return true;
+        else
+            return false;
+    }
 }
