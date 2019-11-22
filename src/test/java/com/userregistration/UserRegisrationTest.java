@@ -9,4 +9,8 @@ public class UserRegisrationTest {
         public void givenMessageShowTrueWhenFirstNameWithCapitalLetter() {
             Assert.assertTrue(UserRegistration.userFirstName("Ravi"));
         }
+        @Test
+        public void givenMessageShowFalseWhenFirstNameWithoutCapitalLetterAndWithSymbols() {
+            Assert.assertTrue(UserRegistration.userFirstName("ravi@"));
+    }
 }
