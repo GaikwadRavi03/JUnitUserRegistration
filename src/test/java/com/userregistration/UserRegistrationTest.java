@@ -17,4 +17,8 @@ public class UserRegistrationTest {
         public void givenMessageShowTrueWhenLastNameWithCapitalLetter() {
             Assert.assertTrue(UserRegistration.userLastName("Gaikwad"));
         }
+        @Test
+        public void givenMessageShowFalseWhenLastNameWithoutCapitalLetterAndWithSymbols() {
+            Assert.assertTrue(UserRegistration.userLastName("g$aikwad#"));
+        }
 }
