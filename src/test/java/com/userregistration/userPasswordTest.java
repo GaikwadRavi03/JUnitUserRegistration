@@ -37,7 +37,12 @@ public class userPasswordTest {
                 {"PASSWORD",true},
                 {"PASSword",true},
                 {"PASSword",true},
-                {"12PA34ss",true}};
+                {"Password@123",false},
+                {"#password",false},
+                {"pass%1234",false},
+                {"PASS12",false},
+                {"1234*5678",false},
+                {"Password-",false}};
 
         return Arrays.asList(data);
     }
