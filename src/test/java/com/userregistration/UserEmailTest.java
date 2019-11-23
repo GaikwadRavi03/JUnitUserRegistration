@@ -1,4 +1,4 @@
-package com.userregistration.userregistration;
+package com.userregistration;
 
 import com.userregistration.UserRegistration;
 import org.junit.Assert;

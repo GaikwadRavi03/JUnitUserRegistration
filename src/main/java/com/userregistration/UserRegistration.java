@@ -41,5 +41,13 @@ public class UserRegistration {
             return false;
     }
 
+    public Boolean validateUserPassword(String userPassword) {
+        Pattern userPasswordPattern = Pattern.compile("^[a-zA-Z0-9]{8,}");
+        Matcher match = userPasswordPattern.matcher(userPassword);
+        if (match.matches())
+            return true;
+        else
+            return false;
+    }
 }
 
