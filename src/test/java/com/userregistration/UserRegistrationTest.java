@@ -29,4 +29,14 @@ public class UserRegistrationTest {
     public void givenMessageShowTrueWhenMobNoIsValidWithCountryCode() {
         Assert.assertTrue(UserRegistration.userMobNo("91 9876543210"));
     }
+
+    @Test
+    public void givenMessageShowFalseWhenMobNoIsNOtValidWithLessThan10Digits() {
+        Assert.assertFalse(UserRegistration.userMobNo("91 987654210"));
+    }
+
+    @Test
+    public void givenMessageShowFalseWhenMobNoIsNOtValidWithGreaterThan10Digits() {
+        Assert.assertFalse(UserRegistration.userMobNo("91 98765421000"));
+    }
 }
