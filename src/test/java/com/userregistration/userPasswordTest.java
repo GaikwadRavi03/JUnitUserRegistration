@@ -29,20 +29,20 @@ public class userPasswordTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         Object[][] data = new Object[][]{
-                {"Password123",true},
-                {"passWord",true},
-                {"pass1234",true},
-                {"PASS1234",true},
-                {"12345678",true},
-                {"PASSWORD",true},
-                {"PASSword",true},
-                {"PASSword",true},
-                {"Password@123",false},
-                {"#password",false},
-                {"pass%1234",false},
-                {"PASS12",false},
-                {"1234*5678",false},
-                {"Password-",false}};
+                {"Password@123",true},
+                {"#passWord1",true},
+                {"Pass%1234",true},
+                {"PaASS1212%",true},
+                {"1234*5678Aa",true},
+                {"Pa1ss2word#",true},
+                {"PASSword",false},
+                {"Password123",false},
+                {"#passWord",false},
+                {"Pass1234",false},
+                {"pa12",false},
+                {"PaASS1212",false},
+                {"12345678Aa",false},
+                {"Pa1ss2word",false}};
 
         return Arrays.asList(data);
     }
