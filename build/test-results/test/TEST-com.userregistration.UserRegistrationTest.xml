@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.userregistration.UserRegistrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-23T14:29:24" hostname="admin141-desktop" time="0.011">
+  <properties/>
+  <testcase name="givenMessageShowFalseWhenLastNameWithoutCapitalLetterAndWithSymbols" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMessageShowFalseWhenFirstNameWithoutCapitalLetterAndWithSymbols" classname="com.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenMessageShowTrueWhenLastNameWithCapitalLetter" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMessageShowTrueWhenMobNoIsValidWithCountryCode" classname="com.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenMessageShowTrueWhenFirstNameWithCapitalLetter" classname="com.userregistration.UserRegistrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

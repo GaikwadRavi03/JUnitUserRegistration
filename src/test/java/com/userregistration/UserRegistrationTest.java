@@ -12,7 +12,7 @@ public class UserRegistrationTest {
 
     @Test
     public void givenMessageShowFalseWhenFirstNameWithoutCapitalLetterAndWithSymbols() {
-        Assert.assertTrue(UserRegistration.userFirstName("ravi@"));
+        Assert.assertFalse(UserRegistration.userFirstName("ravi@"));
     }
 
     @Test
@@ -22,7 +22,11 @@ public class UserRegistrationTest {
 
     @Test
     public void givenMessageShowFalseWhenLastNameWithoutCapitalLetterAndWithSymbols() {
-        Assert.assertTrue(UserRegistration.userLastName("g$aikwad#"));
+        Assert.assertFalse(UserRegistration.userLastName("g$aikwad#"));
     }
 
+    @Test
+    public void givenMessageShowTrueWhenMobNoIsValidWithCountryCode() {
+        Assert.assertTrue(UserRegistration.userMobNo("91 9876543210"));
+    }
 }

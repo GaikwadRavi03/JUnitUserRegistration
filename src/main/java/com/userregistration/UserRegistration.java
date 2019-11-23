@@ -23,7 +23,6 @@ public class UserRegistration {
             return false;
     }
 
-
     public Boolean validateUserEmail(String userEmail) {
         Pattern lastNamePattern = Pattern.compile("^[a-zA-Z0-9]([._+]{0,1}[a-zA-Z0-9])*[@]{1}[a-zA-Z0-9]{1,}[.]{1}[a-zA-Z]{2,3}([.]{1}[a-zA-Z]{2}){0,1}$");
         Matcher match = lastNamePattern.matcher(userEmail);
@@ -32,5 +31,15 @@ public class UserRegistration {
         else
             return false;
     }
+
+    public static boolean userMobNo(String mobNo) {
+        Pattern mobNoPattern = Pattern.compile("^[0-9]{2}\\s[0-9]{10}$");
+        Matcher match = mobNoPattern.matcher(mobNo);
+        if (match.matches())
+            return true;
+        else
+            return false;
+    }
+
 }
 
